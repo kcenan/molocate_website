@@ -810,7 +810,6 @@ p.client-name {
     font-size: 46px;
     padding: 0;
     margin: 0 auto;
-    margin-top: -46px;
 }
 .contact-submit:hover {
     background: #C92451;
