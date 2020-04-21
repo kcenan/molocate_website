@@ -56,10 +56,14 @@ Text Domain: polo
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #222;
-
+    font-family: 'Roboto';font-size: 22px;
 }
+
+/*body {*/
+/*    font-family: 'Lato', Calibri, Arial, sans-serif;*/
+/*    color: #222;*/
+
+/*}*/
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto', sans-serif;
 }
