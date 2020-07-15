@@ -131,7 +131,9 @@ $(window).scroll(function(){
 // });
 
 var slideIndex = 1;
+var slideVideoIndex = 1;
 showSlides(slideIndex);
+showVideoSlides(slideVideoIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -140,6 +142,22 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+function plusVideoSlides(n) {
+  showVideoSlides(slideVideoIndex += n);
+  stopAllVideos();
+}
+
+function currentVideoSlide(n) {
+  showVideoSlides(slideVideoIndex = n);
+  stopAllVideos();
+}
+function stopAllVideos() {
+    $('.molocatevideo').each(function() {
+        $(this).get(0).pause();
+    });
+}
+
 
 function showSlides(n) {
   var i;
@@ -155,4 +173,20 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+function showVideoSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mottoslidevideo");
+  var dots = document.getElementsByClassName("dotvideo");
+  if (n > slides.length) {slideVideoIndex = 1}
+  if (n < 1) {slideVideoIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideVideoIndex-1].style.display = "block";
+  dots[slideVideoIndex-1].className += " active";
 }

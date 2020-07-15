@@ -102,7 +102,7 @@ a:hover {
 .block-title {
     font-weight: 300;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 3.8em;
+    font-size: 2em;
     padding: 0 40px;
     margin: 0;
     line-height: 1.6;
@@ -113,7 +113,7 @@ a:hover {
 }
 
 .block {
-    padding: 80px 0px 50px 0px;
+    padding: 80px 0px 0px 0px;
     overflow: hidden;
 
 }
@@ -753,18 +753,16 @@ p.client-name {
     background: url(../img/bg1.jpg);
     height: 640px;
 }
-.mailbox {
-    width: 70%;
+.supporters {
+    width: 100%;
     float: left;
-    
-    background-color: #EB2B5D;
     padding-bottom: 111px;
     height: 640px;
 }
 .address .container {
     max-width: 100%;
 }
-.mailbox .container {
+.supporters .container {
     max-width: 90%;
 }
 .address-list {
@@ -798,7 +796,7 @@ p.client-name {
     display: table-cell;
     vertical-align: middle;
 }
-.mailbox .container {
+.supporters .container {
     margin-top: 225px;
     margin-bottom: 0px;
 }
@@ -868,7 +866,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 
 #footer {
     background: #C92451;
-    padding: 20px 0px 22px 0px;
+    padding: 0px 0px 20px 0px;
 }
 .footer-logo {
     font-size: 27px;
@@ -886,7 +884,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 
 .copyright {
     color: #fff;
-    text-align: right;
+    text-align: left;
     font-size: 18px;
     margin-top: 40px;
 }
@@ -923,7 +921,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .address{
         width: 100%;
     }
-    .mailbox{
+    .supporters{
         width: 100%;
     }
     .address-list {
@@ -934,7 +932,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .address {
     height: 340px;
     }
-    .mailbox .container{
+    .supporters .container{
         margin-top: 100px;
         height: auto;
     }
@@ -963,14 +961,14 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .address{
         width: 100%;
     }
-    .mailbox{
+    .supporters{
         width: 100%;
     }
-    .mailbox {
+    .supporters {
         padding-bottom: 111px;
         height: auto;
     }
-    .mailbox .container {
+    .supporters .container {
         margin-top: 130px;
         margin-bottom: 0px;
     }
@@ -1024,9 +1022,12 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
   padding: 16px;
   color: white;
+  background-color: gray;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -1078,6 +1079,21 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 
 .active, .dot:hover {
+  background-color: #717171;
+}
+
+.dotvideo {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dotvideo:hover {
   background-color: #717171;
 }
 
