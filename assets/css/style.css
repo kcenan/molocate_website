@@ -1113,4 +1113,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}}
+}
+
+.team-pic {
+  border-radius: 50%;
+}
