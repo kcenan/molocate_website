@@ -478,6 +478,10 @@ a:hover {
   text-align: center;
 }
 
+#teammembers {
+    left: 100px;
+}
+
 #teammembers .item{
   padding: 0px 0px;
   margin: 10px;
